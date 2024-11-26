@@ -1,0 +1,23 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'dist/styles.css' %}" rel="stylesheet">
+   {% block title %} 
+    
+   {% endblock  %}
+</head>
+<body>
+    
+    {% include "components/navbar.html" %}
+    
+    {% block content %}
+    {% endblock %}
+    
+    <script src={% static "./js/preline/preline.js" %}></script>
+    {% include "components/footer.html" %}
+</body>
+</html>

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    <title>Add_project</title>
+{% endblock  %}
+
+{% block content %}
+<header class="flex items-center justify-center mt-6 text-7xl font-gummy">ADD_PROJECT</header>
+<div class="max-w-2xl mx-auto bg-white p-16">
+
+<form>
+    <div class="grid gap-6 mb-6 lg:grid-cols-2 ">
+        <div>
+            <label for="Project_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Project_name</label>
+            <input type="text" id="Project_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required>
+        </div>
+        <div>
+            <label for="Receive_from" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Receive_from</label>
+            <input type="text" id="Receive_from" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required>
+        </div>
+        <div>
+            <label for="Date_receipt" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"> Date of receipt</label>
+            <input type="date" id="Date_receipt" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+        </div>  
+        <div>
+            <label for="Deadline" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Deadline</label>
+            <input type="date" id="Deadline" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+        </div>  
+        <div>
+            <label for="Compensation" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Compensation</label>
+            <input type="text" id="Compensation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"required>
+        </div>  
+        <div class="col-span-full">
+            <label for="about" class="block text-sm/6 font-medium text-gray-900">About</label>
+            <div class="mt-2">
+              <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"></textarea>
+            </div>
+            <p class="mt-3 text-sm/6 text-gray-600">Write a few sentences about Project.</p>
+          </div>
+    </div>
+    <button type="button" class="py-3 mt-4 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-transparent bg-red-500 text-white hover:bg-red-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+        ADD
+      </button>
+      <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
+        CANCEL
+      </button>
+</form>
+{% endblock  %}
