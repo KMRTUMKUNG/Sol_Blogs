@@ -10,4 +10,5 @@ urlpatterns = [
     path('apply_work',views.apply),
     path('Add_pro',views.add),
     path('pro_progress',views.progress),
+    path('profile',views.profile),
 ]

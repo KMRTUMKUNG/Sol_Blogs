@@ -26,3 +26,7 @@ def add(request):
 
 def progress(request):
     return render(request,"pro_progress.html")
+
+def profile(request):
+    return render(request,"profile.html")
+
