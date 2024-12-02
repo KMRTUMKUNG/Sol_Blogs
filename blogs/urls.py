@@ -11,4 +11,5 @@ urlpatterns = [
     path('Add_pro',views.add),
     path('pro_progress',views.progress),
     path('profile',views.profile),
+    path('Sol_history',views.history),
 ]

@@ -30,3 +30,6 @@ def progress(request):
 def profile(request):
     return render(request,"profile.html")
 
+def history(request):
+    return render(request,"Sol_history.html")
+
